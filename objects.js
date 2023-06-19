@@ -94,4 +94,21 @@ for(let user in users){
     }
 }
  console.log("personnes connectées : " + connectedPerson);
-  
+
+// nombre de personnes ayant plus de 50 points
+let hightPointsPersonn = 0;
+for(let user in users){
+  const pointsPerson = users[user].points;
+  if(pointsPerson >= 50){
+    hightPointsPersonn++;
+  }
+}
+console.log("nombres de personnes ayant plus de 50 points : " + hightPointsPersonn);
+
+// obtenir toutes les cles de mon objet
+const keys = Object.keys(users);
+console.log(keys);
+
+// obtenir toutes les valeurs de mon objet
+const values = Object.values(users);
+console.log(values);
